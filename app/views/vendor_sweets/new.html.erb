@@ -1,0 +1,16 @@
+<% if flash[:errors]%>
+    <%flash[:errors].each do |e|%>
+        <li style = "color: red"><%= e%></li>
+    <% end%>
+<% end%>
+
+
+<%= form_with(model: @vendor_sweet) do |f|%>
+    <%=f.label :Vendor%>
+    <%=f.collection_select(:vendor_id, @vendors, :id, :name) %>
+    <%=f.label :Sweet%>
+    <%=f.collection_select(:sweet_id, @sweets, :id, :name) %>
+    <%=f.label :Price%>
+    <%= f.number_field :price%>
+    <%= f.submit%>
+<% end%>
