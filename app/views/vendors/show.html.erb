@@ -1,0 +1,5 @@
+<h3><%= @vendor.name%> | Average Price : <%= @vendor.avg_price%></h3>
+<label>Sweets list</label>
+<% @vendor.sweets.each do |s|%>
+    <%= link_to s.name, sweet_path(s)%>
+<% end%>

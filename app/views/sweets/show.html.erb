@@ -1,0 +1,5 @@
+<h3><%= @sweet.name%></h3>
+<label>Vendors list : </label>
+<% @sweet.vendors.each do |v|%>
+    <%= link_to v.name, vendor_path(v)%>
+<% end%>
