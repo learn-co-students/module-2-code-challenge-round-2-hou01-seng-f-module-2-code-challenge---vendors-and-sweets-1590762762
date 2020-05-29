@@ -1,0 +1,6 @@
+<p>Vendor Name: <%= @vendor.name %></p>
+<ul>
+<p>Sweets Menu: <% @vendor.sweets.each do |sweet| %>
+<li><%= link_to sweet.name, sweet %></li>
+<% end %>
+</ul>
