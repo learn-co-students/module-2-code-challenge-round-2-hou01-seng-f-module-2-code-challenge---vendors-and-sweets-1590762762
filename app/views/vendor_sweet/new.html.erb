@@ -1,0 +1,23 @@
+<% if flash[:errors] %>
+ <%flash[:errors].each do |e| %>
+
+   <%= e %>
+	<% end %>
+
+<% end %>	
+
+<%= form_with model:@vendor_sweet do |a| %>
+<%=  a.label :price   %>
+<%=  a.number_field :price %>
+
+<%=  a.label :vendor   %>
+<%=  a.collection_select :vendor_id, Vendor.all, :id, :name %>
+
+<%=  a.label :sweet %>
+<%=  a.collection_select :sweet_id , Sweet.all, :id, :name %>
+
+<%=  a.submit %>
+
+
+
+<% end %>

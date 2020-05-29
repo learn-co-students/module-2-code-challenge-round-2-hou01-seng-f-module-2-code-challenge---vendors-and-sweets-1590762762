@@ -1,4 +1,4 @@
-# Rails Code Challenge - Sweets Vendors
+  # Rails Code Challenge - Sweets Vendors
 
 For this assessment, you'll be working with a vendors and sweets domain.
 
@@ -23,7 +23,7 @@ This application tracks vendors who sell sweets.
 
 There are three models in the domain: Sweets, Vendors, and a join model VendorSweets.
 
-Vendors can have many sweets. Sweets can be sold by many vendors. The join model `VendorSweet` connects **one sweet** with **one vendor**.
+Vendors can have many sweets. Sweets can be sold by many vendors. The join model `n` connects **one sweet** with **one vendor**.
 
 ## What You Already Have
 
